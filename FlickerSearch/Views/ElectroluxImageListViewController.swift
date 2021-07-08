@@ -32,6 +32,7 @@ class ElectroluxImageListViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.register(ListCollectionViewCell.self, forCellWithReuseIdentifier: ListCollectionViewCell.reuseIdentifier)
         return collectionView
     }()
 
@@ -79,12 +80,20 @@ extension ElectroluxImageListViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collec
-        cell.backgroundColor = .yellow
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCollectionViewCell.reuseIdentifier, for: indexPath)
+                as? ListCollectionViewCell else {
+            assertionFailure("Couldn't dequeue the correct cell")
+            return UICollectionViewCell()
+        }
+        let image = images[indexPath.row]
+        cell.renderImage(url: image.url_m)
         return cell
     }
 }
 
 extension ElectroluxImageListViewController: UICollectionViewDelegateFlowLayout {
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = view.frame.width / 2
+        return CGSize(width: width, height: width)
+    }
 }
