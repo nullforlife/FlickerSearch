@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		098FD1C3E2CF94747408F128 /* Pods_FlickerSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA33B83C806A78D55B4953 /* Pods_FlickerSearch.framework */; };
 		622AF41226970382001DEDED /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41126970382001DEDED /* Image.swift */; };
+		622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */; };
 		629D750F2696F50100A3C4BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D750E2696F50100A3C4BB /* NetworkManager.swift */; };
 		629D75112696F60A00A3C4BB /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D75102696F60900A3C4BB /* SearchService.swift */; };
 		629D75172696F7D000A3C4BB /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D75162696F7D000A3C4BB /* URL+Extensions.swift */; };
@@ -48,6 +49,7 @@
 		3FA45B7CCA297B5A8D02CCFD /* Pods-FlickerSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerSearch.release.xcconfig"; path = "Target Support Files/Pods-FlickerSearch/Pods-FlickerSearch.release.xcconfig"; sourceTree = "<group>"; };
 		42DFB173D1BE55A3BB3C2857 /* Pods-FlickerSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerSearchTests.release.xcconfig"; path = "Target Support Files/Pods-FlickerSearchTests/Pods-FlickerSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		622AF41126970382001DEDED /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroLuxImageListPresenter.swift; sourceTree = "<group>"; };
 		629D750E2696F50100A3C4BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		629D75102696F60900A3C4BB /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		629D75162696F7D000A3C4BB /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				62D66D332696EDE700F92E52 /* AppDelegate.swift */,
 				62D66D352696EDE700F92E52 /* SceneDelegate.swift */,
 				62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */,
+				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
 				62D66D3C2696EDE800F92E52 /* Assets.xcassets */,
 				62D66D3E2696EDE800F92E52 /* LaunchScreen.storyboard */,
 				62D66D412696EDE800F92E52 /* Info.plist */,
@@ -445,6 +448,7 @@
 				629D75112696F60A00A3C4BB /* SearchService.swift in Sources */,
 				629D750F2696F50100A3C4BB /* NetworkManager.swift in Sources */,
 				62D66D362696EDE700F92E52 /* SceneDelegate.swift in Sources */,
+				622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
