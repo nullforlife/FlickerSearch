@@ -15,7 +15,7 @@ class NetworkManager: NetworkManagerProtocol {
 
     func fetchData<T: Decodable>(request: URLRequest, model: T.Type, completion: @escaping(_ result: Result<T, Error>) -> Void) {
         let session = URLSession(configuration: .default)
-        session.dataTask(with: request) { data, response, error in
+        let task = session.dataTask(with: request) { data, response, error in
 
             if let data = data {
                 do {
@@ -29,6 +29,7 @@ class NetworkManager: NetworkManagerProtocol {
                 completion(.failure(error ?? NetworkError.genericError))
             }
         }
+        task.resume()
     }
 
     enum NetworkError: Error {

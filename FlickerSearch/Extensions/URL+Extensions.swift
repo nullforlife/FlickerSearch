@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+extension URL {
+    func appendingPathComponents(_ pathComponents: [String]) -> URL {
+        pathComponents.reduce(self) { url, pathComponent in
+            url.appendingPathComponent(pathComponent)
+        }
+    }
+}
