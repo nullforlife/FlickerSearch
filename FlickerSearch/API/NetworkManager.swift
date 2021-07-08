@@ -9,6 +9,7 @@ import Foundation
 
 protocol NetworkManagerProtocol {
     func fetchData<T: Decodable>(request: URLRequest, model: T.Type, completion: @escaping(_ result: Result<T, Error>) -> Void)
+    func fetchImageData(request: URLRequest, completion: @escaping(_ result: Result<Data, Error>) -> Void) -> URLSessionDataTask
 }
 
 class NetworkManager: NetworkManagerProtocol {
@@ -30,6 +31,19 @@ class NetworkManager: NetworkManagerProtocol {
             }
         }
         task.resume()
+    }
+
+    func fetchImageData(request: URLRequest, completion: @escaping(_ result: Result<Data, Error>) -> Void) -> URLSessionDataTask {
+
+        let session = URLSession(configuration: .default)
+        let task = session.dataTask(with: request) { data, _, error in
+            if let data = data {
+                completion(.success(data))
+            } else {
+                completion(.failure(error ?? NetworkError.genericError))
+            }
+        }
+        return task
     }
 
     enum NetworkError: Error {
