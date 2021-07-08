@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		098FD1C3E2CF94747408F128 /* Pods_FlickerSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA33B83C806A78D55B4953 /* Pods_FlickerSearch.framework */; };
 		622AF41226970382001DEDED /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41126970382001DEDED /* Image.swift */; };
-		622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */; };
+		622AF41426970C15001DEDED /* ImageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41326970C15001DEDED /* ImageListPresenter.swift */; };
 		622AF41A269711CB001DEDED /* ImageListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */; };
 		622AF41C26971204001DEDED /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41B26971204001DEDED /* UICollectionViewCell+Extensions.swift */; };
 		622AF42126971291001DEDED /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF42026971291001DEDED /* ImageService.swift */; };
@@ -53,7 +53,7 @@
 		3FA45B7CCA297B5A8D02CCFD /* Pods-FlickerSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerSearch.release.xcconfig"; path = "Target Support Files/Pods-FlickerSearch/Pods-FlickerSearch.release.xcconfig"; sourceTree = "<group>"; };
 		42DFB173D1BE55A3BB3C2857 /* Pods-FlickerSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerSearchTests.release.xcconfig"; path = "Target Support Files/Pods-FlickerSearchTests/Pods-FlickerSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		622AF41126970382001DEDED /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroLuxImageListPresenter.swift; sourceTree = "<group>"; };
+		622AF41326970C15001DEDED /* ImageListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListPresenter.swift; sourceTree = "<group>"; };
 		622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCollectionViewCell.swift; sourceTree = "<group>"; };
 		622AF41B26971204001DEDED /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		622AF42026971291001DEDED /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				62D66D372696EDE700F92E52 /* ImageListViewController.swift */,
 				622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */,
 				622AF42226971413001DEDED /* ImageListCollectionViewCellPresenter.swift */,
-				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
+				622AF41326970C15001DEDED /* ImageListPresenter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -471,7 +471,7 @@
 				629D750F2696F50100A3C4BB /* NetworkManager.swift in Sources */,
 				622AF42126971291001DEDED /* ImageService.swift in Sources */,
 				62D66D362696EDE700F92E52 /* SceneDelegate.swift in Sources */,
-				622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */,
+				622AF41426970C15001DEDED /* ImageListPresenter.swift in Sources */,
 				622AF42326971413001DEDED /* ImageListCollectionViewCellPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
