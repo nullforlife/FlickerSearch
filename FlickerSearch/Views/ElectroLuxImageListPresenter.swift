@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ElectroLuxImageListPresenter {
-    weak var delegate: ElextroLuxImageViewControllerDelegate?
+class ImageListPresenter {
+    weak var delegate: ImageViewControllerDelegate?
 
     private let service = SearchService()
 

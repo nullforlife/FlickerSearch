@@ -8,16 +8,16 @@
 import UIKit
 import SnapKit
 
-protocol ElextroLuxImageViewControllerDelegate: AnyObject {
+protocol ImageViewControllerDelegate: AnyObject {
     func imageFetchResult(result: Result<[Image], Error>)
 }
 
-class ElectroluxImageListViewController: UIViewController {
+class ListViewController: UIViewController {
 
-    let presenter: ElectroLuxImageListPresenter
+    let presenter: ImageListPresenter
 
     init() {
-        presenter = ElectroLuxImageListPresenter()
+        presenter = ImageListPresenter()
         super.init(nibName: nil, bundle: nil)
         presenter.delegate = self
     }
@@ -62,7 +62,7 @@ class ElectroluxImageListViewController: UIViewController {
     }
 }
 
-extension ElectroluxImageListViewController: ElextroLuxImageViewControllerDelegate {
+extension ListViewController: ImageViewControllerDelegate {
     func imageFetchResult(result: Result<[Image], Error>) {
         switch result {
         case .success(let images):
@@ -74,7 +74,7 @@ extension ElectroluxImageListViewController: ElextroLuxImageViewControllerDelega
     }
 }
 
-extension ElectroluxImageListViewController: UICollectionViewDataSource {
+extension ListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         images.count
     }
@@ -91,7 +91,7 @@ extension ElectroluxImageListViewController: UICollectionViewDataSource {
     }
 }
 
-extension ElectroluxImageListViewController: UICollectionViewDelegateFlowLayout {
+extension ListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width / 2
         return CGSize(width: width, height: width)

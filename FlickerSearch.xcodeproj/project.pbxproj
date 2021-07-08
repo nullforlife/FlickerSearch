@@ -19,7 +19,7 @@
 		629D75172696F7D000A3C4BB /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D75162696F7D000A3C4BB /* URL+Extensions.swift */; };
 		62D66D342696EDE700F92E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D332696EDE700F92E52 /* AppDelegate.swift */; };
 		62D66D362696EDE700F92E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D352696EDE700F92E52 /* SceneDelegate.swift */; };
-		62D66D382696EDE700F92E52 /* ElectroluxImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */; };
+		62D66D382696EDE700F92E52 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D372696EDE700F92E52 /* ListViewController.swift */; };
 		62D66D3D2696EDE800F92E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D66D3C2696EDE800F92E52 /* Assets.xcassets */; };
 		62D66D402696EDE800F92E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D66D3E2696EDE800F92E52 /* LaunchScreen.storyboard */; };
 		62D66D4B2696EDE800F92E52 /* FlickerSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D4A2696EDE800F92E52 /* FlickerSearchTests.swift */; };
@@ -64,7 +64,7 @@
 		62D66D302696EDE700F92E52 /* FlickerSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D66D332696EDE700F92E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D66D352696EDE700F92E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxImageListViewController.swift; sourceTree = "<group>"; };
+		62D66D372696EDE700F92E52 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		62D66D3C2696EDE800F92E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62D66D3F2696EDE800F92E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62D66D412696EDE800F92E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		622AF418269710D8001DEDED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */,
+				62D66D372696EDE700F92E52 /* ListViewController.swift */,
 				622AF419269711CB001DEDED /* ListCollectionViewCell.swift */,
 				622AF42226971413001DEDED /* ListCollectionViewCellPresenter.swift */,
 				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
@@ -463,7 +463,7 @@
 			files = (
 				622AF41A269711CB001DEDED /* ListCollectionViewCell.swift in Sources */,
 				622AF41226970382001DEDED /* Image.swift in Sources */,
-				62D66D382696EDE700F92E52 /* ElectroluxImageListViewController.swift in Sources */,
+				62D66D382696EDE700F92E52 /* ListViewController.swift in Sources */,
 				629D75172696F7D000A3C4BB /* URL+Extensions.swift in Sources */,
 				622AF41C26971204001DEDED /* UICollectionViewCell+Extensions.swift in Sources */,
 				62D66D342696EDE700F92E52 /* AppDelegate.swift in Sources */,
