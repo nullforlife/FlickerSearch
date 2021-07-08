@@ -16,7 +16,7 @@ class ImageListCollectionViewCell: UICollectionViewCell {
 
     private let presenter: ImageListCollectionViewCellPresenter
 
-    private lazy var listImageView: UIImageView = {
+    lazy var listImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         return imageView

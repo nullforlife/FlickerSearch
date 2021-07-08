@@ -10,6 +10,7 @@ import SnapKit
 
 protocol ImageListViewControllerDelegate: AnyObject {
     func imageFetchResult(result: Result<[Image], Error>)
+    func imageSaved()
 }
 
 class ImageListViewController: UIViewController {
@@ -61,6 +62,18 @@ class ImageListViewController: UIViewController {
             make.edges.equalToSuperview()
         }
     }
+
+    private func showSaveImageOption() {
+        navigationItem.setRightBarButton(UIBarButtonItem(title: "Save image",
+                                                         style: .done,
+                                                         target: self,
+                                                         action: #selector(saveImageButtonPressed)),
+                                         animated: true)
+    }
+
+    @objc private func saveImageButtonPressed() {
+        presenter.saveSelectedImage()
+    }
 }
 
 extension ImageListViewController: ImageListViewControllerDelegate {
@@ -72,6 +85,12 @@ extension ImageListViewController: ImageListViewControllerDelegate {
             // Present an error view
             break
         }
+    }
+
+    func imageSaved() {
+        let alert = UIAlertController(title: "Image saved!", message: nil, preferredStyle: .alert)
+        alert.addAction(.init(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true)
     }
 }
 
@@ -109,6 +128,8 @@ extension ImageListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? ImageListCollectionViewCell else { return }
         cell.setSelected(true)
+        presenter.imageSelected(cell.listImageView.image ?? UIImage())
+        showSaveImageOption()
     }
 
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
