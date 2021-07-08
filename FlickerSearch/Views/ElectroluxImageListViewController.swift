@@ -96,4 +96,12 @@ extension ElectroluxImageListViewController: UICollectionViewDelegateFlowLayout 
         let width = view.frame.width / 2
         return CGSize(width: width, height: width)
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        0
+    }
 }
