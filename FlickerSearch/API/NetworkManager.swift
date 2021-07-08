@@ -7,8 +7,13 @@
 
 import Foundation
 
-class Network {
+protocol NetworkManagerProtocol {
+    func fetchData<T: Decodable>(request: URLRequest, completion: (_ result: Result<T, Error>) -> Void)
+}
 
-    
+class NetworkManager: NetworkManagerProtocol {
 
+    func fetchData<T: Decodable>(request: URLRequest, completion: (_ result: Result<T, Error>) -> Void) {
+
+    }
 }
