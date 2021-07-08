@@ -107,6 +107,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		622AF418269710D8001DEDED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */,
+				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		629D750D2696F4F800A3C4BB /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +159,11 @@
 		62D66D322696EDE700F92E52 /* FlickerSearch */ = {
 			isa = PBXGroup;
 			children = (
+				622AF418269710D8001DEDED /* Views */,
 				629D750D2696F4F800A3C4BB /* API */,
 				629D75152696F7C100A3C4BB /* Extensions */,
 				62D66D332696EDE700F92E52 /* AppDelegate.swift */,
 				62D66D352696EDE700F92E52 /* SceneDelegate.swift */,
-				62D66D372696EDE700F92E52 /* ElectroluxImageListViewController.swift */,
-				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
 				62D66D3C2696EDE800F92E52 /* Assets.xcassets */,
 				62D66D3E2696EDE800F92E52 /* LaunchScreen.storyboard */,
 				62D66D412696EDE800F92E52 /* Info.plist */,
