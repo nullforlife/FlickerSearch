@@ -9,7 +9,7 @@ import Foundation
 
 class SearchService {
 
-    let manager: NetworkManagerProtocol
+    private let manager: NetworkManagerProtocol
 
     init(manager: NetworkManagerProtocol = NetworkManager()) {
         self.manager = manager
