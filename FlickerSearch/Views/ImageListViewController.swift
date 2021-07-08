@@ -46,6 +46,7 @@ class ImageListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Beautiful images"
         setupViews()
         setupConstraints()
         presenter.fetchImages()
