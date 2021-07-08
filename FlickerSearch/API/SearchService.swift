@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+class SearchService {
+
+    let manager: NetworkManagerProtocol
+
+    init(manager: NetworkManagerProtocol = NetworkManager()) {
+        self.manager = manager
+    }
+
+    func fetchElectroluxImages() {
+        
+    }
+}
