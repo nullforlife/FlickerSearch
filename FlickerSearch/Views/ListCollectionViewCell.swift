@@ -40,6 +40,12 @@ class ListCollectionViewCell: UICollectionViewCell {
         presenter.listCollectionViewCellPrepareForReuseWasCalled(self)
     }
 
+    func setSelected(_ selected: Bool) {
+        listImageView.alpha = selected ? 0.8 : 1
+        let scale: CGFloat = selected  ? 0.95 : 1
+        listImageView.transform = CGAffineTransform(scaleX: scale, y: scale)
+    }
+
     func renderImage(url: URL) {
         presenter.fetchImage(url: url)
     }
