@@ -8,11 +8,11 @@
 import UIKit
 import SnapKit
 
-protocol ImageViewControllerDelegate: AnyObject {
+protocol ImageListViewControllerDelegate: AnyObject {
     func imageFetchResult(result: Result<[Image], Error>)
 }
 
-class ListViewController: UIViewController {
+class ImageListViewController: UIViewController {
 
     let presenter: ImageListPresenter
 
@@ -32,7 +32,7 @@ class ListViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(ListCollectionViewCell.self, forCellWithReuseIdentifier: ListCollectionViewCell.reuseIdentifier)
+        collectionView.register(ImageListCollectionViewCell.self, forCellWithReuseIdentifier: ImageListCollectionViewCell.reuseIdentifier)
         return collectionView
     }()
 
@@ -62,7 +62,7 @@ class ListViewController: UIViewController {
     }
 }
 
-extension ListViewController: ImageViewControllerDelegate {
+extension ImageListViewController: ImageListViewControllerDelegate {
     func imageFetchResult(result: Result<[Image], Error>) {
         switch result {
         case .success(let images):
@@ -74,14 +74,14 @@ extension ListViewController: ImageViewControllerDelegate {
     }
 }
 
-extension ListViewController: UICollectionViewDataSource {
+extension ImageListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         images.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCollectionViewCell.reuseIdentifier, for: indexPath)
-                as? ListCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageListCollectionViewCell.reuseIdentifier, for: indexPath)
+                as? ImageListCollectionViewCell else {
             assertionFailure("Couldn't dequeue the correct cell")
             return UICollectionViewCell()
         }
@@ -91,7 +91,7 @@ extension ListViewController: UICollectionViewDataSource {
     }
 }
 
-extension ListViewController: UICollectionViewDelegateFlowLayout {
+extension ImageListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width / 2
         return CGSize(width: width, height: width)
@@ -106,12 +106,12 @@ extension ListViewController: UICollectionViewDelegateFlowLayout {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? ListCollectionViewCell else { return }
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ImageListCollectionViewCell else { return }
         cell.setSelected(true)
     }
 
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? ListCollectionViewCell else { return }
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ImageListCollectionViewCell else { return }
         cell.setSelected(false)
     }
 }

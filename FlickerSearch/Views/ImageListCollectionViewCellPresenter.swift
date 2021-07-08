@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class ListCollectionViewCellPresenter {
+class ImageListCollectionViewCellPresenter {
 
-    weak var delegate: ListCollectionViewCellDelegate?
+    weak var delegate: ImageListCollectionViewCellDelegate?
     var dataTask: URLSessionDataTask?
     private let service = ImageService()
 
@@ -27,7 +27,7 @@ class ListCollectionViewCellPresenter {
         dataTask?.resume()
     }
 
-    func listCollectionViewCellPrepareForReuseWasCalled(_ cell: ListCollectionViewCell) {
+    func listCollectionViewCellPrepareForReuseWasCalled(_ cell: ImageListCollectionViewCell) {
         dataTask?.cancel()
     }
 }

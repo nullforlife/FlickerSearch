@@ -8,7 +8,7 @@
 import Foundation
 
 class ImageListPresenter {
-    weak var delegate: ImageViewControllerDelegate?
+    weak var delegate: ImageListViewControllerDelegate?
 
     private let service = SearchService()
 

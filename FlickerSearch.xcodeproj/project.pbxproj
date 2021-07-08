@@ -10,16 +10,16 @@
 		098FD1C3E2CF94747408F128 /* Pods_FlickerSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA33B83C806A78D55B4953 /* Pods_FlickerSearch.framework */; };
 		622AF41226970382001DEDED /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41126970382001DEDED /* Image.swift */; };
 		622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */; };
-		622AF41A269711CB001DEDED /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF419269711CB001DEDED /* ListCollectionViewCell.swift */; };
+		622AF41A269711CB001DEDED /* ImageListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */; };
 		622AF41C26971204001DEDED /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF41B26971204001DEDED /* UICollectionViewCell+Extensions.swift */; };
 		622AF42126971291001DEDED /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF42026971291001DEDED /* ImageService.swift */; };
-		622AF42326971413001DEDED /* ListCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF42226971413001DEDED /* ListCollectionViewCellPresenter.swift */; };
+		622AF42326971413001DEDED /* ImageListCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF42226971413001DEDED /* ImageListCollectionViewCellPresenter.swift */; };
 		629D750F2696F50100A3C4BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D750E2696F50100A3C4BB /* NetworkManager.swift */; };
 		629D75112696F60A00A3C4BB /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D75102696F60900A3C4BB /* SearchService.swift */; };
 		629D75172696F7D000A3C4BB /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D75162696F7D000A3C4BB /* URL+Extensions.swift */; };
 		62D66D342696EDE700F92E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D332696EDE700F92E52 /* AppDelegate.swift */; };
 		62D66D362696EDE700F92E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D352696EDE700F92E52 /* SceneDelegate.swift */; };
-		62D66D382696EDE700F92E52 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D372696EDE700F92E52 /* ListViewController.swift */; };
+		62D66D382696EDE700F92E52 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D372696EDE700F92E52 /* ImageListViewController.swift */; };
 		62D66D3D2696EDE800F92E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D66D3C2696EDE800F92E52 /* Assets.xcassets */; };
 		62D66D402696EDE800F92E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D66D3E2696EDE800F92E52 /* LaunchScreen.storyboard */; };
 		62D66D4B2696EDE800F92E52 /* FlickerSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D66D4A2696EDE800F92E52 /* FlickerSearchTests.swift */; };
@@ -54,17 +54,17 @@
 		42DFB173D1BE55A3BB3C2857 /* Pods-FlickerSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickerSearchTests.release.xcconfig"; path = "Target Support Files/Pods-FlickerSearchTests/Pods-FlickerSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		622AF41126970382001DEDED /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroLuxImageListPresenter.swift; sourceTree = "<group>"; };
-		622AF419269711CB001DEDED /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCollectionViewCell.swift; sourceTree = "<group>"; };
 		622AF41B26971204001DEDED /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		622AF42026971291001DEDED /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
-		622AF42226971413001DEDED /* ListCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
+		622AF42226971413001DEDED /* ImageListCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
 		629D750E2696F50100A3C4BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		629D75102696F60900A3C4BB /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		629D75162696F7D000A3C4BB /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		62D66D302696EDE700F92E52 /* FlickerSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D66D332696EDE700F92E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D66D352696EDE700F92E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62D66D372696EDE700F92E52 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		62D66D372696EDE700F92E52 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		62D66D3C2696EDE800F92E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62D66D3F2696EDE800F92E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62D66D412696EDE800F92E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 		622AF418269710D8001DEDED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62D66D372696EDE700F92E52 /* ListViewController.swift */,
-				622AF419269711CB001DEDED /* ListCollectionViewCell.swift */,
-				622AF42226971413001DEDED /* ListCollectionViewCellPresenter.swift */,
+				62D66D372696EDE700F92E52 /* ImageListViewController.swift */,
+				622AF419269711CB001DEDED /* ImageListCollectionViewCell.swift */,
+				622AF42226971413001DEDED /* ImageListCollectionViewCellPresenter.swift */,
 				622AF41326970C15001DEDED /* ElectroLuxImageListPresenter.swift */,
 			);
 			path = Views;
@@ -461,9 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622AF41A269711CB001DEDED /* ListCollectionViewCell.swift in Sources */,
+				622AF41A269711CB001DEDED /* ImageListCollectionViewCell.swift in Sources */,
 				622AF41226970382001DEDED /* Image.swift in Sources */,
-				62D66D382696EDE700F92E52 /* ListViewController.swift in Sources */,
+				62D66D382696EDE700F92E52 /* ImageListViewController.swift in Sources */,
 				629D75172696F7D000A3C4BB /* URL+Extensions.swift in Sources */,
 				622AF41C26971204001DEDED /* UICollectionViewCell+Extensions.swift in Sources */,
 				62D66D342696EDE700F92E52 /* AppDelegate.swift in Sources */,
@@ -472,7 +472,7 @@
 				622AF42126971291001DEDED /* ImageService.swift in Sources */,
 				62D66D362696EDE700F92E52 /* SceneDelegate.swift in Sources */,
 				622AF41426970C15001DEDED /* ElectroLuxImageListPresenter.swift in Sources */,
-				622AF42326971413001DEDED /* ListCollectionViewCellPresenter.swift in Sources */,
+				622AF42326971413001DEDED /* ImageListCollectionViewCellPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

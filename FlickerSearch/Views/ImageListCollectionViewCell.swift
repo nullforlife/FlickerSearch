@@ -8,13 +8,13 @@
 import UIKit
 import SnapKit
 
-protocol ListCollectionViewCellDelegate: AnyObject {
+protocol ImageListCollectionViewCellDelegate: AnyObject {
     func imageFetchResult(result: Result<UIImage, Error>)
 }
 
-class ListCollectionViewCell: UICollectionViewCell {
+class ImageListCollectionViewCell: UICollectionViewCell {
 
-    private let presenter: ListCollectionViewCellPresenter
+    private let presenter: ImageListCollectionViewCellPresenter
 
     private lazy var listImageView: UIImageView = {
         let imageView = UIImageView()
@@ -30,7 +30,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     }()
 
     override init(frame: CGRect) {
-        presenter = ListCollectionViewCellPresenter()
+        presenter = ImageListCollectionViewCellPresenter()
         super.init(frame: frame)
         presenter.delegate = self
         setupViews()
@@ -74,7 +74,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension ListCollectionViewCell: ListCollectionViewCellDelegate {
+extension ImageListCollectionViewCell: ImageListCollectionViewCellDelegate {
     func imageFetchResult(result: Result<UIImage, Error>) {
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
