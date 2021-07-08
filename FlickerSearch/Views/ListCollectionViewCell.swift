@@ -22,6 +22,13 @@ class ListCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
 
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.hidesWhenStopped = true
+        indicator.stopAnimating()
+        return indicator
+    }()
+
     override init(frame: CGRect) {
         presenter = ListCollectionViewCellPresenter()
         super.init(frame: frame)
@@ -47,16 +54,22 @@ class ListCollectionViewCell: UICollectionViewCell {
     }
 
     func renderImage(url: URL) {
+        activityIndicator.startAnimating()
         presenter.fetchImage(url: url)
     }
 
     private func setupViews() {
         addSubview(listImageView)
+        addSubview(activityIndicator)
     }
 
     private func setupConstraints() {
         listImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+
+        activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
         }
     }
 }
@@ -64,6 +77,7 @@ class ListCollectionViewCell: UICollectionViewCell {
 extension ListCollectionViewCell: ListCollectionViewCellDelegate {
     func imageFetchResult(result: Result<UIImage, Error>) {
         DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
             switch result {
             case .success(let image):
                 self.listImageView.image = image
